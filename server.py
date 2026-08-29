@@ -64,8 +64,8 @@ def convert():
     except requests.RequestException:
         return jsonify({"error": "Could not download image"}), 400
 
-    except Exception as e:
-        return jsonify({"error": "Could not convert image"}), 400
+ except Exception as e:
+        return jsonify({"error": "Could not convert image"}), 400   
 
 
 if __name__ == "__main__":
